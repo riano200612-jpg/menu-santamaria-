@@ -22,6 +22,10 @@ export function FooterFadingTicker({ idioma }: FooterFadingTickerProps) {
       en: '📍 Plaza del Museo Naval · Historic Center, Cartagena',
     },
     {
+      es: '💵 Conversión en USD basada en la TRM oficial certificada por el Banco de la República.',
+      en: '💵 USD estimates calculated with the official TRM rate certified by the Central Bank of Colombia ($3,306.86 COP/USD).',
+    },
+    {
       es: '📞 Reservas: 315 055 4615 · 📸 @santamariadelmarctg',
       en: '📞 Reservations: 315 055 4615 · 📸 @santamariadelmarctg',
     },

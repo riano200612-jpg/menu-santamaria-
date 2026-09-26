@@ -1,6 +1,6 @@
 {
-  "name": "Menú Interactivo para Restaurante",
-  "description": "Menú digital interactivo para restaurante con soporte bilingüe (Español/Inglés), modo claro/oscuro, código QR y maridaje recomendado.",
+  "name": "Santa María del Mar — Restaurante Bar | Carta Oficial",
+  "description": "Carta oficial y menú interactivo de Santa María del Mar en Cartagena de Indias. Cocina de origen caribeño y coctelería de autor.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

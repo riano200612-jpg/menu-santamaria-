@@ -322,9 +322,12 @@ export const CATEGORIAS_SELECTOR_I18N: Record<Idioma, { id: CategoriaFiltro; lab
   ],
 };
 
+// Tasa Representativa del Mercado (TRM) oficial vigente certificada por la Superintendencia Financiera / Banrep
+export const TASA_CAMBIO_USD_COP = 3306.86;
+
 export function formatearPrecio(precioCop: number, idioma: Idioma): string {
   if (idioma === 'en') {
-    const usd = Math.round(precioCop / 4000);
+    const usd = Math.round(precioCop / TASA_CAMBIO_USD_COP);
     return `$${precioCop.toLocaleString('en-US')} COP (~$${usd} USD)`;
   }
   return `${precioCop.toLocaleString('es-CO')} COP`;
@@ -332,7 +335,7 @@ export function formatearPrecio(precioCop: number, idioma: Idioma): string {
 
 export function formatearTotal(precioCop: number, idioma: Idioma): string {
   if (idioma === 'en') {
-    const usd = (precioCop / 4000).toFixed(2);
+    const usd = Math.round(precioCop / TASA_CAMBIO_USD_COP);
     return `$${precioCop.toLocaleString('en-US')} COP (~$${usd} USD)`;
   }
   return `${precioCop.toLocaleString('es-CO')} COP`;
