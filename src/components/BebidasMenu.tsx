@@ -29,13 +29,12 @@ export interface BebidasMenuProps {
 
 export function BebidasMenu({
   idioma = 'es',
-  iniciarColapsado = false,
+  iniciarColapsado = true,
   busquedaExterna,
   className = '',
 }: BebidasMenuProps) {
-  const [categoriaAbiertaId, setCategoriaAbiertaId] = useState<CategoriaBebidaId | null>(() => {
-    return iniciarColapsado ? null : 'cocteles-piratas';
-  });
+  // Por defecto todas las categorías inician cerradas (null) para una experiencia limpia de cero saturación
+  const [categoriaAbiertaId, setCategoriaAbiertaId] = useState<CategoriaBebidaId | null>(null);
 
   const [busquedaInterna, setBusquedaInterna] = useState<string>('');
   const busquedaEfectiva = busquedaExterna !== undefined ? busquedaExterna : busquedaInterna;

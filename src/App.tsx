@@ -771,7 +771,8 @@ export default function App() {
   const darkMode = false;
 
   const [seccionMenu, setSeccionMenu] = useState<'comida' | 'bebidas'>('comida');
-  const [categoriaAbiertaId, setCategoriaAbiertaId] = useState<string | null>('desayunos');
+  // Por defecto todas las categorías inician cerradas (null) para una experiencia limpia de cero saturación
+  const [categoriaAbiertaId, setCategoriaAbiertaId] = useState<string | null>(null);
   const [busqueda, setBusqueda] = useState<string>('');
   const [platoDetalle, setPlatoDetalle] = useState<PlatoEntrada | null>(null);
   const [mostrarQR, setMostrarQR] = useState<boolean>(false);
