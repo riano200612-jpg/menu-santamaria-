@@ -426,24 +426,24 @@ export const CATEGORIAS_BEBIDAS: CategoriaBebidas[] = [
     items: [
       {
         id: 'cerveza-club-colombia-dorado',
-        nombre: 'Club Colombia Dorado',
+        nombre: 'Club Colombia',
         ingredientes: { es: 'Cerveza tipo lager dorada tradicional' },
-        precio: 16000,
-        precioTexto: '$ 16.000',
+        precio: 20000,
+        precioTexto: '$ 20.000',
       },
       {
         id: 'cerveza-aguila-original',
         nombre: 'Águila Original',
         ingredientes: { es: 'Cerveza clásica tipo lager colombiana' },
-        precio: 12000,
-        precioTexto: '$ 12.000',
+        precio: 16000,
+        precioTexto: '$ 16.000',
       },
       {
         id: 'cerveza-aguila-light',
         nombre: 'Águila Light',
         ingredientes: { es: 'Cerveza lager ligera y refrescante' },
-        precio: 12000,
-        precioTexto: '$ 12.000',
+        precio: 16000,
+        precioTexto: '$ 16.000',
       },
       {
         id: 'cerveza-corona',
